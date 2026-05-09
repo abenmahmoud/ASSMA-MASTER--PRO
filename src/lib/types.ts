@@ -1,4 +1,18 @@
-export type ProjectStatus = 'uploading' | 'processing' | 'mixing' | 'mastering' | 'qc' | 'complete' | 'failed'
+export type ProjectStatus =
+  | 'created'
+  | 'ready'
+  | 'uploading'
+  | 'processing'
+  | 'vocal'
+  | 'harmonies'
+  | 'instruments'
+  | 'premix'
+  | 'mixing'
+  | 'mastering'
+  | 'label_qc'
+  | 'qc'
+  | 'complete'
+  | 'failed'
 
 export interface Project {
   id: string
