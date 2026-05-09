@@ -1,0 +1,43 @@
+@import "tailwindcss" source("../");
+
+@theme {
+  --color-studio-900: oklch(0.15 0.02 270);
+  --color-studio-800: oklch(0.20 0.02 270);
+  --color-studio-700: oklch(0.25 0.025 270);
+  --color-studio-600: oklch(0.30 0.03 270);
+  --color-studio-500: oklch(0.40 0.03 270);
+  --color-studio-400: oklch(0.55 0.03 270);
+  --color-studio-300: oklch(0.70 0.02 270);
+  --color-studio-200: oklch(0.85 0.01 270);
+  --color-studio-100: oklch(0.95 0.005 270);
+  --color-accent-violet: oklch(0.65 0.25 290);
+  --color-accent-cyan: oklch(0.75 0.15 195);
+  --color-accent-green: oklch(0.70 0.20 155);
+  --color-accent-red: oklch(0.65 0.22 25);
+  --color-accent-amber: oklch(0.75 0.18 75);
+}
+
+body {
+  @apply m-0 bg-studio-900 text-studio-100 antialiased;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+    "Helvetica Neue", sans-serif;
+}
+
+code {
+  font-family: "JetBrains Mono", "Fira Code", "Consolas", monospace;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: oklch(0.15 0.02 270);
+}
+::-webkit-scrollbar-thumb {
+  background: oklch(0.30 0.03 270);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: oklch(0.40 0.03 270);
+}
